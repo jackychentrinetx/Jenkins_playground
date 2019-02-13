@@ -1,0 +1,2 @@
+use database INDIGO_RAW_20181213;
+select table_name from information_schema.tables where table_name like 'PATIENT%';
