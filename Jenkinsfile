@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('connect_Snowflake') {
       steps {
-        sh 'pwd'
+        sh 'snowsql -a nv34673.us-east-1 -u jchen -M -f test.snow'
         echo 'Hi after pwd'
       }
     }
